@@ -1,11 +1,11 @@
-package algorithm;
+package algorithm.search;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class Binary_Search {
+public class Binary_Search implements Search{
     public static int BinSearch(int arr[], int key){
         int pl = 0;
         int pr = arr.length-1;
@@ -31,5 +31,10 @@ public class Binary_Search {
         System.out.printf("인덱스 = %d", Arrays.binarySearch(arr, key));
         System.out.printf("인덱스 = %d", BinSearch(arr, key));
         System.out.printf("인덱스 = %d", Arrays.binarySearch(arr, key));
+    }
+
+    @Override
+    public int search(int[] arr, int key) {
+        return 0;
     }
 }
