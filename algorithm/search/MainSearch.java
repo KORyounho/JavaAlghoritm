@@ -12,9 +12,10 @@ public class MainSearch {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int key = Integer.parseInt(br.readLine());
-        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        SearchChoice searchChoice = new SearchChoice(new BinarySearch(arr));
-        System.out.printf("인덱스 = %d", Arrays.binarySearch(arr, key));
+        int[] arr = {1, 2, 3, 4, 5, 6, 7, 7, 7, 8, 9, 10};
+        SearchChoice searchChoice = new SearchChoice(new ArrSearch(arr, key));
+        Search search = new BinarySearch(arr, key);
+        System.out.printf("인덱스 = %d", search.search());
 
     }
 }
