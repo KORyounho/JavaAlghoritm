@@ -6,9 +6,9 @@ import java.util.Arrays;
 public class BinarySearch implements Search{
     int [] arr;
     int key;
-    public BinarySearch(int arr[]){
+    public BinarySearch(int arr[], int key){
         Arrays.sort(arr);
-        arr = this.arr;
+        this.arr = arr;
     };
         @Override
     public int search(int[] arr, int key) {

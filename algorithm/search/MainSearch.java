@@ -13,7 +13,7 @@ public class MainSearch {
 
         int key = Integer.parseInt(br.readLine());
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        SearchChoice searchChoice = new SearchChoice(new BinarySearch(arr));
+        SearchChoice searchChoice = new SearchChoice(new ArrSearch(arr, key));
         System.out.printf("인덱스 = %d", Arrays.binarySearch(arr, key));
 
     }
