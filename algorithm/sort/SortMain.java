@@ -7,9 +7,13 @@ public class SortMain {
         Sort sort_bubble = new Sort(arr);
         Sort sort_insert = new Sort(arr);
         Sort sort_select = new Sort(arr);
+<<<<<<< HEAD
         Sort sort_shell = new Sort(arr);
         Sort sort_quick_recycle = new Sort(arr); // 재귀함수 퀵정렬
         Sort sort_quick = new Sort(arr);
+=======
+
+>>>>>>> origin/master
         sort_bubble.bubbleSort();
 
         System.out.println("bubble sort");
@@ -26,6 +30,7 @@ public class SortMain {
         for(int i = 0; i<9; i++){
             System.out.printf("%d번째 = %d\n", i, sort_insert.getArrInd(i));
         }
+<<<<<<< HEAD
         sort_shell.ShellSort(); // shell sort는 다시 공부하기
         System.out.println("shell sort");
         for(int i = 0; i<9; i++){
@@ -37,4 +42,9 @@ public class SortMain {
             System.out.printf("%d번째 = %d\n", i, sort_quick_recycle.getArrInd(i));
         }
     }
+=======
+    }
+
+
+>>>>>>> origin/master
 }

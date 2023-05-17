@@ -11,11 +11,14 @@ public class Sort {
     public int[] getArr() {
         return arr;
     }
+<<<<<<< HEAD
     public static void swap(int arr[], int ind1, int ind2){
         int temp = arr[ind1];
         arr[ind1] = arr[ind2];
         arr[ind2] = temp;
     }
+=======
+>>>>>>> origin/master
 
     public static void bubbleSort(){
         for(int i = 0; i<arr.length-1; i++){
@@ -45,6 +48,7 @@ public class Sort {
        for(int i = 1; i<arr.length; i++){
            int target = arr[i];
            int j = i-1;
+<<<<<<< HEAD
            while(j>=0 && target<arr[j]) {
                arr[j + 1] = arr[j];
                j--;
@@ -98,4 +102,11 @@ public class Sort {
     public void merge(){
 
     }
+=======
+           while(true){
+
+           }
+       }
+   }
+>>>>>>> origin/master
 }
