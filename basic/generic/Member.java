@@ -1,24 +1,29 @@
 package basic.generic;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Member<E>{
-    E element;
-
-    public Member(E element) {
+    private E element;
+    void set(E element){
         this.element = element;
     }
-
-    public E getElement() {
-        return element;
+    E get(){
+        return genericMethod(element);
     }
 
-    public void setElement(E element) {
-        this.element = element;
+    <T> T genericMethod(T o){
+        return o;
     }
-
     public static void main(String[] args) {
-        Member<Integer> member = new Member<>(10);
+        Member<String> memberA = new Member<>();
+        Member<Integer> memberB = new Member<>();
+        Member memberC = new Member<>();
 
-        System.out.println(member.getElement());
-
+        memberC.set("이중민");
+        System.out.println(memberC.get());
+        memberC.set(5);
+        System.out.println(memberC.get());
     }
+
 }

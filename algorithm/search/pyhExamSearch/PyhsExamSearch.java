@@ -1,4 +1,6 @@
-package algorithm.search;
+package algorithm.search.pyhExamSearch;
+
+import algorithm.search.Comparator;
 
 import java.util.Arrays;
 
@@ -45,13 +47,19 @@ public class PyhsExamSearch {
                     new PhyscData("cha", 149, 1.7)
             };
             int height = 152;
-            int idx = Arrays.binarySearch(
+            int idx = Arrays.binarySearch( // Arrays.binarySearch(배열, 객체 생성자, 찾을 데이터)
                     arr,
                     new PhyscData("", height, 0.0),
                     PhyscData.HEIGHT_ORDER
             );
 
+            if(idx < 0){
+                System.out.println("그 값의 요소가 없습니다.");
+            }
+            else{
+                System.out.println("그 값은 x[" + idx + "] 에 있습니다.");
+                System.out.println("arr[idx] = " + arr[idx]);
+            }
         }
     }
-
 }
